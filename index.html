@@ -4,45 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
+    <!-- Link to the CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>Welcome to My Personal Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a graduate in Environmental Engineering from Tarbiat Modares University, Tehran, specializing in Artificial Intelligence and Machine Learning.</p>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python Programming</li>
-            <li>Machine Learning</li>
-            <li>Artificial Intelligence</li>
-            <li>HTML, CSS, and JavaScript</li>
-        </ul>
-    </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Coming soon...</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your_email@example.com</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 All Rights Reserved.</p>
-    </footer>
+        <p>This is a showcase of my skills and projects.</p>
+
+        <!-- Accordion Section -->
+        <div class="accordion">
+            <button class="accordion-button">Skills</button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Machine Learning</li>
+                    <li>Environmental Engineering</li>
+                    <li>Data Analysis</li>
+                </ul>
+            </div>
+
+            <button class="accordion-button">Projects</button>
+            <div class="accordion-content">
+                <ul>
+                    <li>AI in Water Treatment</li>
+                    <li>Machine Learning for Pollution Prediction</li>
+                    <li>Smart Environmental Sensors</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Dark Mode Toggle -->
+        <button id="toggle-theme" class="theme-toggle">Switch to Dark Mode</button>
+    </div>
+
+    <!-- Link to the JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
-
