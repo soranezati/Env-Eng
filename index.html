@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
-    <!-- Link to the CSS file -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environmental Engineering</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Personal Website</h1>
-        <p>This is a showcase of my skills and projects.</p>
+  <header>
+    <h1>Environmental Engineering</h1>
+    <nav>
+      <ul>
+        <li class="menu-item" data-section="water-quality">Water Quality Modeling</li>
+        <li class="menu-item" data-section="water-treatment">Water and Wastewater Treatment</li>
+        <li class="menu-item" data-section="waste-management">Waste Management</li>
+        <li class="menu-item" data-section="air-pollution">Air Pollution</li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Accordion Section -->
-        <div class="accordion">
-            <button class="accordion-button">Skills</button>
-            <div class="accordion-content">
-                <ul>
-                    <li>Machine Learning</li>
-                    <li>Environmental Engineering</li>
-                    <li>Data Analysis</li>
-                </ul>
-            </div>
+  <main>
+    <section id="content" class="hidden">
+      <h2 id="section-title"></h2>
+      <p id="section-content"></p>
+    </section>
+  </main>
 
-            <button class="accordion-button">Projects</button>
-            <div class="accordion-content">
-                <ul>
-                    <li>AI in Water Treatment</li>
-                    <li>Machine Learning for Pollution Prediction</li>
-                    <li>Smart Environmental Sensors</li>
-                </ul>
-            </div>
-        </div>
+  <footer>
+    <p>Follow us on: 
+      <a href="https://instagram.com" target="_blank">Instagram</a> | 
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
 
-        <!-- Dark Mode Toggle -->
-        <button id="toggle-theme" class="theme-toggle">Switch to Dark Mode</button>
-    </div>
-
-    <!-- Link to the JavaScript file -->
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
